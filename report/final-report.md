@@ -33,10 +33,12 @@ AI 主要参与了项目结构搭建、规格文档整理、代码修改建议�
 - 项目区截图：已保存为 `screenshots/projects-section.png`，用于证明 Projects 区块内容与最终页面一致。
 - 前端审美检测：已使用 `impeccable` 检测脚本检查 HTML、CSS 和 JS，未发现反模式提示。
 - 链接与导航检查：页面内部导航可跳转；GitHub 主页链接已更新为 `https://github.com/yangke060905`。
-- GitHub Pages 访问：TODO
-- Checklist 完成情况：基础区块、桌面端和手机端本地检查已完成；GitHub Pages、最终链接、TA-Claw 提交仍待完成。
+- GitHub Pages 访问：待 push 后在线验证。
+- Checklist 完成情况：基础区块、桌面端和手机端本地检查已完成；GitHub Pages 截图和 TA-Claw 提交仍待完成。
 
-GitHub Pages 链接：TODO
+GitHub 仓库：`https://github.com/yangke060905/personal-website-ai-homework`
+
+GitHub Pages 链接：`https://yangke060905.github.io/personal-website-ai-homework/`
 
 ## 6. 问题与修复
 

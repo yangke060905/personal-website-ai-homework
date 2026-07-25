@@ -28,7 +28,7 @@
 
 ## 工程与文档
 
-- [ ] `README.md` 已说明项目、模板来源、主要修改和 Pages 链接。
+- [x] `README.md` 已说明项目、模板来源、主要修改和 Pages 链接。
 - [x] `docs/prd.md` 已完成，且与最终网站一致。
 - [x] `docs/design.md` 已完成，且与最终网站一致。
 - [x] `docs/checklist.md` 已完成，勾选项有证据支撑。
@@ -39,7 +39,7 @@
 ## 发布与提交
 
 - [ ] GitHub Pages 链接可在无痕窗口打开。
-- [ ] Pages 链接已写入 `README.md` 和 `report/final-report.md`。
+- [x] Pages 链接已写入 `README.md` 和 `report/final-report.md`。
 - [ ] GitHub Pages 或部署成功截图已保存到 `screenshots/github-pages.png`。
 - [x] 完成后的 Checklist 截图已保存到 `screenshots/checklist.png`。
 - [x] 仓库和提交包不包含 `.env`、密码、API Key、Token、课程邀请码或隐私文件。

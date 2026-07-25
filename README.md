@@ -10,7 +10,9 @@
 - 验证截图：已保存桌面端、手机端、项目区和 Checklist 等证据截图到 `screenshots/`。
 - 附加作业：OpenClaw 双角色自动对话 APP 已放入 `additional/openclaw-dual-role-submission/`，并保留压缩包 `additional/openclaw-dual-role-submission.zip`。
 - GitHub 主页：`https://github.com/yangke060905`。
-- 待补充：GitHub Pages 链接和发布证据截图。
+- GitHub 仓库：`https://github.com/yangke060905/personal-website-ai-homework`。
+- GitHub Pages：`https://yangke060905.github.io/personal-website-ai-homework/`。
+- 待补充：发布成功证据截图。
 
 ## 模板来源
 
@@ -39,7 +41,7 @@ http://localhost:8000
 
 ## GitHub Pages 链接
 
-TODO: 发布后填写正式链接。
+https://yangke060905.github.io/personal-website-ai-homework/
 
 ## 隐私说明
 
