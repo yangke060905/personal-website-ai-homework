@@ -32,7 +32,7 @@ AI 主要参与了项目结构搭建、规格文档整理、代码修改建议�
 - 本地手机端预览：已使用 390px 宽度移动端视口检查，截图保存为 `screenshots/homepage-mobile.png`，未发现横向溢出。
 - 项目区截图：已保存为 `screenshots/projects-section.png`，用于证明 Projects 区块内容与最终页面一致。
 - 前端审美检测：已使用 `impeccable` 检测脚本检查 HTML、CSS 和 JS，未发现反模式提示。
-- 链接与导航检查：页面内部导航可跳转；GitHub 主页链接待补充真实用户名后复查。
+- 链接与导航检查：页面内部导航可跳转；GitHub 主页链接已更新为 `https://github.com/yangke060905`。
 - GitHub Pages 访问：TODO
 - Checklist 完成情况：基础区块、桌面端和手机端本地检查已完成；GitHub Pages、最终链接、TA-Claw 提交仍待完成。
 
@@ -46,7 +46,7 @@ GitHub Pages 链接：TODO
 
 ## 7. 后续计划
 
-- 补充 GitHub 主页链接并发布 GitHub Pages。
+- 发布 GitHub Pages。
 - 根据最终链接更新 README、报告和 Checklist。
 - 保存 GitHub Pages 页面、Checklist 和必要的提交记录截图。
 - 后续可继续补充项目详情页和长期学习记录。

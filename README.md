@@ -9,7 +9,8 @@
 - 报告材料：已建立 `report/final-report.md`，发布信息等待 GitHub Pages 完成后补齐。
 - 验证截图：已保存桌面端、手机端、项目区和 Checklist 等证据截图到 `screenshots/`。
 - 附加作业：OpenClaw 双角色自动对话 APP 已放入 `additional/openclaw-dual-role-submission/`，并保留压缩包 `additional/openclaw-dual-role-submission.zip`。
-- 待补充：GitHub 主页链接、GitHub Pages 链接和发布证据截图。
+- GitHub 主页：`https://github.com/yangke060905`。
+- 待补充：GitHub Pages 链接和发布证据截图。
 
 ## 模板来源
 
@@ -20,7 +21,7 @@
 - 初始化项目目录、基础网页结构和作业文档。
 - 根据本人简历材料筛选公开信息，替换个人简介、能力方向、经历轨迹和项目概述。
 - 将页面从普通卡片式简历改为成熟、清爽的金融科技个人产品主页。
-- 后续将补充 GitHub 链接、GitHub Pages 发布地址和 TA-Claw 提交结果。
+- 后续将补充 GitHub Pages 发布地址和 TA-Claw 提交结果。
 
 ## 本地预览
 
