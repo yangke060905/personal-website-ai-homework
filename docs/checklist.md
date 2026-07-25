@@ -43,5 +43,5 @@
 - [x] GitHub Pages 或部署成功截图已保存到 `screenshots/github-pages.png`。
 - [x] 完成后的 Checklist 截图已保存到 `screenshots/checklist.png`。
 - [x] 仓库和提交包不包含 `.env`、密码、API Key、Token、课程邀请码或隐私文件。
-- [ ] 已在 TA-Claw 中预览代码、报告、截图、会话和排除文件。
-- [ ] 已完成二次确认并看到 `Submitted successfully`。
+- [x] 已在 TA-Claw 中预览代码、报告、截图、会话和排除文件。
+- [x] 已完成二次确认并看到 `Submitted successfully`。

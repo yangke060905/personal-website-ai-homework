@@ -34,7 +34,8 @@ AI 主要参与了项目结构搭建、规格文档整理、代码修改建议�
 - 前端审美检测：已使用 `impeccable` 检测脚本检查 HTML、CSS 和 JS，未发现反模式提示。
 - 链接与导航检查：页面内部导航可跳转；GitHub 主页链接已更新为 `https://github.com/yangke060905`。
 - GitHub Pages 访问：已验证可访问，线上页面标题为“何超洋 | 金融科技个人网站”。
-- Checklist 完成情况：基础区块、桌面端、手机端和 GitHub Pages 在线检查已完成；TA-Claw 提交仍待完成。
+- Checklist 完成情况：基础区块、桌面端、手机端、GitHub Pages 在线检查和 TA-Claw 提交均已完成。
+- TA-Claw 提交结果：作业码 `QZCO05EU`，提交成功，`submission_id=124`，`attempt_no=1`。
 
 GitHub 仓库：`https://github.com/yangke060905/personal-website-ai-homework`
 
