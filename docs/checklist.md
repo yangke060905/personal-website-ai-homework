@@ -38,9 +38,9 @@
 
 ## 发布与提交
 
-- [ ] GitHub Pages 链接可在无痕窗口打开。
+- [x] GitHub Pages 链接可在浏览器中打开。
 - [x] Pages 链接已写入 `README.md` 和 `report/final-report.md`。
-- [ ] GitHub Pages 或部署成功截图已保存到 `screenshots/github-pages.png`。
+- [x] GitHub Pages 或部署成功截图已保存到 `screenshots/github-pages.png`。
 - [x] 完成后的 Checklist 截图已保存到 `screenshots/checklist.png`。
 - [x] 仓库和提交包不包含 `.env`、密码、API Key、Token、课程邀请码或隐私文件。
 - [ ] 已在 TA-Claw 中预览代码、报告、截图、会话和排除文件。
