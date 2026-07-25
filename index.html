@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="何超洋的个人网站，展示金融科技、产品研究、商业分析、数据工具和 AI 系统学习方向。"
+    />
+    <title>何超洋 | 金融科技个人网站</title>
+    <link rel="preload" href="assets/hero-visual.png" as="image" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <!--
+      THESIS: A polished public portfolio for a fintech student, refusing poster-scale slogans and template resume cards.
+      OWN-WORLD: soft green-grey workspace, compact product-page rhythm, precise cards, quiet evidence marks, one deep green accent.
+      STORY: the visitor first meets He Chaoyang, then sees his capability map, project proof, experience path, and assignment evidence.
+      FIRST VIEWPORT: name and positioning on the left, a composed profile/workbench card on the right, with clear project and checklist actions.
+      FORM: mature personal product portfolio, built as a static GitHub Pages-ready coursework artifact.
+    -->
+
+    <header class="site-nav">
+      <a class="brand" href="#hero" aria-label="返回首页">
+        <span class="brand-mark">HCY</span>
+        <span>
+          <strong>何超洋</strong>
+          <small>FinTech / Product / AI</small>
+        </span>
+      </a>
+      <nav aria-label="主要导航">
+        <a href="#about">简介</a>
+        <a href="#skills">能力</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">深圳大学 · 金融科技</p>
+          <h1>何超洋</h1>
+          <p class="lead">把财务、产品和 AI 系统放在同一条学习主线上。</p>
+          <p class="intro">
+            我关注金融科技产品、商业分析、数据工具和智能体系统。BA 是方向之一，更长期的目标是把业务判断、产品设计和可验证的 AI 工作流连起来。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">查看项目</a>
+            <a class="button secondary" href="docs/checklist.md">验收清单</a>
+          </div>
+          <div class="hero-tags" aria-label="能力关键词">
+            <span>财务分析</span>
+            <span>PRD</span>
+            <span>SQL / Python</span>
+            <span>Agent / RAG</span>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="个人方向概览">
+          <img
+            src="assets/hero-visual.png"
+            alt="金融科技、数据分析和产品研究的抽象工作台视觉"
+          />
+          <div class="panel-body">
+            <div>
+              <span class="panel-label">当前定位</span>
+              <strong>金融科技产品与研究型学生</strong>
+            </div>
+            <div class="focus-list">
+              <span>财知道</span>
+              <span>金智研途</span>
+              <span>AI 系统学习</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="evidence-strip" aria-label="作业证据链">
+        <a href="docs/prd.md"><span>Vibe</span><strong>PRD</strong></a>
+        <a href="docs/design.md"><span>Spec</span><strong>Design</strong></a>
+        <a href="docs/checklist.md"><span>Harness</span><strong>Checklist</strong></a>
+        <a href="README.md"><span>GitHub</span><strong>README</strong></a>
+        <span><span>Pages</span><strong>Pending</strong></span>
+        <a href="report/final-report.md"><span>TA-Claw</span><strong>Report</strong></a>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading">
+          <span class="kicker">About</span>
+          <h2>我想展示的不是一份完整简历，而是我的判断如何形成。</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            我来自深圳大学微众金融科技学院。学习和实习让我逐渐意识到：数据、业务和产品并不是三件分开的事，关键在于能不能把问题拆清楚、把证据组织好、把结果交付成可验证的系统。
+          </p>
+          <p>
+            这个网站只放适合公开展示的信息：专业方向、能力结构、项目概述、部分实习与校园经历，以及课程作业所需的 PRD、设计说明、Checklist、报告和截图。
+          </p>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-heading compact">
+          <span class="kicker">Capability Map</span>
+          <h2>四组能力，服务同一条主线。</h2>
+        </div>
+        <div class="skill-grid">
+          <article>
+            <span class="skill-code">FIN</span>
+            <h3>财务与商业分析</h3>
+            <p>财务报表、估值框架、资本结构、收入确认、关联交易和行业研究。</p>
+          </article>
+          <article>
+            <span class="skill-code">PRD</span>
+            <h3>产品与需求研究</h3>
+            <p>问卷、访谈、竞品分析、模块拆解、路线图和验收标准。</p>
+          </article>
+          <article>
+            <span class="skill-code">DATA</span>
+            <h3>数据与工程工具</h3>
+            <p>Excel、SQL、Python、Markdown、GitHub、Node.js、Express、SQLite 和 Docker。</p>
+          </article>
+          <article>
+            <span class="skill-code">AI</span>
+            <h3>AI 系统理解</h3>
+            <p>Agent、Skill、RAG、REST、SSE、前后端边界和可信结果展示。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-heading">
+          <span class="kicker">Selected Work</span>
+          <h2>三个项目，分别对应产品、研究和 AI 系统。</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card featured">
+            <div class="project-index">01</div>
+            <div class="project-content">
+              <span class="project-type">个人产品</span>
+              <h3>财知道：全资产记账产品</h3>
+              <p>
+                围绕现金、积分、物品、保险、债权和投资等资产，探索个人财务管理工具。重点在产品定位、规则引擎、资产联动、折旧算法和 AI 助手构想。
+              </p>
+              <ul>
+                <li>从记账痛点切入，扩展到资产全景</li>
+                <li>用 PRD 和模块拆解约束实现范围</li>
+                <li>尝试把 AI 建议嵌入财务行动闭环</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-index">02</div>
+            <div class="project-content">
+              <span class="project-type">研究与实务</span>
+              <h3>财务数据风险识别与行业研究</h3>
+              <p>
+                在审计和行业研究场景中接触财务数据结构、收入确认测试、关联交易、行业分析框架和研究报告写作，训练从证据到结论的分析习惯。
+              </p>
+              <ul>
+                <li>KPMG 审计经历建立财务数据敏感度</li>
+                <li>东方证券行研经历训练行业框架</li>
+                <li>把业务事实、数据线索和风险判断连起来</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-index">03</div>
+            <div class="project-content">
+              <span class="project-type">团队项目</span>
+              <h3>金智研途</h3>
+              <p>
+                面向科研与学习场景的 AI 智能体系统。参与需求调研、模块规划、任务推进和阶段交付，关注 Agent、Skill、RAG 与前后端业务闭环如何配合。
+              </p>
+              <ul>
+                <li>主导需求问卷、访谈表单和调研传播方案</li>
+                <li>整理科研板块架构与阶段交付物</li>
+                <li>把学习 Vault 中的系统边界转化为项目理解</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience">
+        <div class="section-heading compact">
+          <span class="kicker">Experience Path</span>
+          <h2>经历不是堆叠，而是在校准下一步。</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>KPMG 审计</span>
+            <p>从收入确认、关联交易和 ERP 查询中理解企业财务数据结构。</p>
+          </article>
+          <article>
+            <span>东方证券行研</span>
+            <p>参与行业研究报告，学习行业分析框架和研究表达。</p>
+          </article>
+          <article>
+            <span>校园产品与运营</span>
+            <p>通过校园大使和用户运营经历，积累用户触达、沟通协作和活动推进经验。</p>
+          </article>
+          <article>
+            <span>AI 系统学习</span>
+            <p>从 Agent、Skill、RAG、REST 和前后端边界入手，尝试复刻最小系统。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-panel">
+          <div>
+            <span class="kicker">Contact</span>
+            <h2>公开联系与作业验证</h2>
+            <p>
+              当前页面只放公开渠道。课程邀请码、作业代码、平台密码和私人联系方式不会写入仓库、截图或网页。
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button primary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub 待补</a>
+            <a class="button secondary" href="report/final-report.md">查看报告</a>
+            <a class="button secondary" href="docs/checklist.md">验收清单</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> 何超洋</span>
+      <span>Spec checked · Harness ready · Pages pending</span>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
