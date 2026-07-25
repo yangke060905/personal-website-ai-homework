@@ -1,0 +1,58 @@
+﻿OpenClaw status
+
+Overview
++----------------------+-----------------------------------------------------------------------------------------------+
+| Item                 | Value                                                                                         |
++----------------------+-----------------------------------------------------------------------------------------------+
+| OS                   | windows 10.0.26200 (x64) · node 24.18.0                                                       |
+| Dashboard            | http://127.0.0.1:18789/                                                                       |
+| Tailscale exposure   | off                                                                                           |
+| Channel              | stable (default)                                                                              |
+| Update               | npm · deps ok                                                                                 |
+| Gateway              | local · ws://127.0.0.1:18789 (local loopback) · reachable 342ms · auth token                  |
+| Gateway service      | Scheduled Task installed · registered · running (pid 18824, state Ready, Gateway process      |
+|                      | detected for gateway port 18789.)                                                             |
+| Node service         | Scheduled Task not installed                                                                  |
+| Agents               | 1 · no workspaces bootstrapping · sessions 7 · default main active 5m ago                     |
+| Memory               | enabled (plugin memory-core) · not checked                                                    |
+| Plugin compatibility | none                                                                                          |
+| Probes               | skipped (use --deep)                                                                          |
+| Events               | none                                                                                          |
+| Tasks                | 0 active · 0 queued · 0 running · no issues · audit clean · 26 tracked                        |
+| Heartbeat            | 30m (main)                                                                                    |
+| Sessions             | 7 active · default deepseek-v4-flash (1.0m ctx) · ~\.openclaw\agents\main\sessions\sessions.  |
+|                      | json                                                                                          |
++----------------------+-----------------------------------------------------------------------------------------------+
+
+Security audit
+Skipped in fast status. Full report: openclaw security audit
+Deep probe: openclaw status --deep
+
+Channels
+No channels configured
+
+Sessions
++----------------------------+--------+---------+-------------------+------------------+-------------------------------+
+| Key                        | Kind   | Age     | Model             | Runtime          | Tokens                        |
++----------------------------+--------+---------+-------------------+------------------+-------------------------------+
+| agent:main:dual-role-      | direct | 5m ago  | deepseek-v4-flash | OpenClaw Default | 18k/1.0m (2%) · 🗄️ 95% cached |
+| 1784882237…                |        |         |                   |                  |                               |
+| agent:main:dual-role-      | direct | 7m ago  | deepseek-v4-flash | OpenClaw Default | 18k/1.0m (2%) · 🗄️ 95% cached |
+| 1784882090…                |        |         |                   |                  |                               |
+| agent:main:truth-test-     | direct | 10m ago | deepseek-v4-flash | OpenClaw Default | 15k/1.0m (1%) · 🗄️ 62% cached |
+| openclaw                   |        |         |                   |                  |                               |
+| agent:main:dual-role-      | direct | 15m ago | deepseek-v4-flash | OpenClaw Default | 18k/1.0m (2%) · 🗄️ 96% cached |
+| 1784881609…                |        |         |                   |                  |                               |
+| agent:main:dual-role-      | direct | 16m ago | deepseek-v4-flash | OpenClaw Default | 18k/1.0m (2%) · 🗄️ 96% cached |
+| 1784881528…                |        |         |                   |                  |                               |
+| agent:main:dual-role-      | direct | 22m ago | deepseek-v4-flash | OpenClaw Default | 17k/1.0m (2%) · 🗄️ 95% cached |
+| 1784881166…                |        |         |                   |                  |                               |
+| agent:main:main            | direct | 1h ago  | deepseek-v4-flash | OpenClaw Default | 27k/1.0m (3%) · 🗄️ 93% cached |
++----------------------------+--------+---------+-------------------+------------------+-------------------------------+
+
+FAQ: https://docs.openclaw.ai/faq
+Troubleshooting: https://docs.openclaw.ai/troubleshooting
+Next steps:
+  Need to share?      openclaw status --all
+  Need to debug live? openclaw logs --follow
+  Need to test channels? openclaw status --deep

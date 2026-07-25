@@ -8,6 +8,7 @@
 - 规格文档：已建立 `docs/prd.md`、`docs/design.md`、`docs/checklist.md` 初稿。
 - 报告材料：已建立 `report/final-report.md`，发布信息等待 GitHub Pages 完成后补齐。
 - 验证截图：已保存桌面端、手机端、项目区和 Checklist 等证据截图到 `screenshots/`。
+- 附加作业：OpenClaw 双角色自动对话 APP 已放入 `additional/openclaw-dual-role-submission/`，并保留压缩包 `additional/openclaw-dual-role-submission.zip`。
 - 待补充：GitHub 主页链接、GitHub Pages 链接和发布证据截图。
 
 ## 模板来源

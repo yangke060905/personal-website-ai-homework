@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenClaw 双角色闭环聊天</title>
+    <link rel="icon" href="/openclaw-logo.png" />
+    <link rel="stylesheet" href="/styles.css?v=real-openclaw-1" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand">
+          <img src="/openclaw-logo.png" alt="OpenClaw" />
+          <div>
+            <h1>双角色闭环聊天</h1>
+            <p>Finite role protocol · OpenClaw orchestration</p>
+          </div>
+        </div>
+        <div class="topline">
+          <span>MAX ≤ 6</span>
+          <span>STOP WORDS</span>
+          <span>MANUAL ABORT</span>
+        </div>
+        <div class="status" id="healthStatus">
+          <span class="dot"></span>
+          <span>检测中</span>
+        </div>
+      </header>
+
+      <section class="brief-strip">
+        <div>
+          <span class="micro-label">DESIGN READ</span>
+          <strong>课堂 Demo 控制台，而不是聊天玩具</strong>
+        </div>
+        <p>角色定义、资料边界、停止条件和运行证据在同一屏完成，方便演示和截图。</p>
+      </section>
+
+      <section class="layout">
+        <aside class="panel settings-panel">
+          <div class="panel-title">
+            <div>
+              <span class="micro-label">CONTROL</span>
+              <strong>运行控制</strong>
+            </div>
+            <button class="icon-button" id="resetBtn" title="恢复默认">↺</button>
+          </div>
+
+          <label class="field">
+            <span>角色模板</span>
+            <select id="presetSelect"></select>
+          </label>
+
+          <label class="field">
+            <span>讨论主题</span>
+            <textarea id="topicInput" rows="4"></textarea>
+          </label>
+
+          <label class="field">
+            <span class="field-line">
+              <span>可用资料</span>
+              <button type="button" class="tiny-action" data-import-target="sourceInput">导入资料</button>
+            </span>
+            <textarea id="sourceInput" rows="5"></textarea>
+          </label>
+
+          <div class="compact-grid">
+            <label class="field">
+              <span>最大轮数</span>
+              <input id="maxRoundsInput" type="number" min="1" max="6" value="6" />
+            </label>
+            <label class="field">
+              <span>模型通道</span>
+              <select id="providerSelect">
+                <option value="openclaw">OpenClaw 真实生成</option>
+                <option value="fallback">本地示例脚本</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="field">
+            <span>停止词</span>
+            <input id="stopWordsInput" value="[结束],[停止],DONE,同意收束" />
+          </label>
+
+          <div class="actions">
+            <button class="primary" id="startBtn">▶ 开始自动对话</button>
+            <button class="danger" id="stopBtn" disabled>■ 停止</button>
+          </div>
+
+          <div class="evidence-list">
+            <div><span>01</span> 双角色交替</div>
+            <div><span>02</span> 边界可审查</div>
+            <div><span>03</span> 停止条件可见</div>
+            <div><span>04</span> JSON 可导出</div>
+          </div>
+        </aside>
+
+        <section class="workspace">
+          <div class="protocol-bar">
+            <div>
+              <span class="micro-label">PROTOCOL</span>
+              <strong>有限轮次协商</strong>
+            </div>
+            <div class="protocol-steps">
+              <span>A 发起</span>
+              <span>B 约束</span>
+              <span>命中停止</span>
+              <span>导出证据</span>
+            </div>
+          </div>
+
+          <div class="role-grid">
+            <article class="role-editor role-a">
+              <div class="role-head">
+                <span class="role-mark">A</span>
+                <div class="role-title-field">
+                  <span class="micro-label">DRIVER</span>
+                  <input id="roleAName" />
+                </div>
+              </div>
+              <label>目标<textarea id="roleAGoal" rows="3"></textarea></label>
+              <label>
+                <span class="field-line">
+                  <span>可用资料</span>
+                  <button type="button" class="tiny-action" data-import-target="roleAResources">导入资料</button>
+                </span>
+                <textarea id="roleAResources" rows="3"></textarea>
+              </label>
+              <label>禁止事项<textarea id="roleAForbidden" rows="3"></textarea></label>
+              <label>结束条件<textarea id="roleAStop" rows="3"></textarea></label>
+            </article>
+
+            <article class="role-editor role-b">
+              <div class="role-head">
+                <span class="role-mark">B</span>
+                <div class="role-title-field">
+                  <span class="micro-label">CHECKER</span>
+                  <input id="roleBName" />
+                </div>
+              </div>
+              <label>目标<textarea id="roleBGoal" rows="3"></textarea></label>
+              <label>
+                <span class="field-line">
+                  <span>可用资料</span>
+                  <button type="button" class="tiny-action" data-import-target="roleBResources">导入资料</button>
+                </span>
+                <textarea id="roleBResources" rows="3"></textarea>
+              </label>
+              <label>禁止事项<textarea id="roleBForbidden" rows="3"></textarea></label>
+              <label>结束条件<textarea id="roleBStop" rows="3"></textarea></label>
+            </article>
+          </div>
+
+          <section class="chat-panel">
+            <div class="chat-head">
+              <div>
+                <h2>对话记录</h2>
+                <p id="runMeta">等待开始</p>
+              </div>
+              <div class="export-actions">
+                <button class="secondary" id="exportMdBtn">⬇ 导出 MD</button>
+                <button class="secondary subtle" id="exportBtn">JSON</button>
+              </div>
+            </div>
+            <div class="chat-log" id="chatLog"></div>
+            <div class="stop-banner" id="stopBanner" hidden></div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <input id="fileImportInput" type="file" accept=".txt,.md,.csv,.json,.log,text/plain,text/markdown,application/json,text/csv" hidden />
+    <script src="/app.js?v=real-openclaw-1"></script>
+  </body>
+</html>
